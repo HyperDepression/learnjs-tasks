@@ -1,0 +1,19 @@
+<html>
+
+<body>
+    <script>
+        function Accumulator(startingValue) {
+            this.value = startingValue,
+            this.read = () => {
+                this.value += +prompt('Введите число', 0)
+            }
+        }
+
+        let acc = new Accumulator(1)
+        acc.read()
+        acc.read()
+        alert(acc.value)
+    </script>
+</body>
+
+</html>

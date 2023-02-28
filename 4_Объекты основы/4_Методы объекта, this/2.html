@@ -1,0 +1,24 @@
+<html>
+
+<body>
+    <script>
+        let calculator = {
+            read() {
+                this.a = prompt('Введите 1 число', 0)
+                this.b = prompt('Введите 2 число', 0)
+            },
+            sum() {
+                return Number(this.a) + Number(this.b)
+            },
+            mul() {
+                return Number(this.a) * Number(this.b)
+            }
+        }
+
+        calculator.read()
+        alert(calculator.sum())
+        alert(calculator.mul())
+    </script>
+</body>
+
+</html>

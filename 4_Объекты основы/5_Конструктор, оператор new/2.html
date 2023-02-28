@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <script>
+        function Calculator() {
+            this.read = () => {
+                this.a = +prompt('Введите 1 число', 0)
+                this.b = +prompt('Введите 2 число', 0)
+            },
+            this.sum = () => {
+                return this.a + this.b
+            },
+            this.mul = () => {
+                return this.a * this.b
+            }
+        }
+
+        let calculator = new Calculator()
+        calculator.read()
+        alert(calculator.sum())
+        alert(calculator.mul())
+    </script>
+</body>
+
+</html>

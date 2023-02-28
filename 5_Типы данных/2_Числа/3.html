@@ -1,0 +1,19 @@
+<html>
+
+<body>
+    <script>
+        function readNumber() {
+            let num = NaN
+
+            while (isNaN(num)) {
+                num = prompt('Введите число', 0)
+            }
+
+            return (num === null || num === '') ? null : +num
+        }
+
+        alert(readNumber())
+    </script>
+</body>
+
+</html>
